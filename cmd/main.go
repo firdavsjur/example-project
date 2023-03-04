@@ -20,8 +20,8 @@ func main() {
 	c := controller.NewController(&cfg, jsonDb)
 
 	// Product(c)
-	controller.GetAllShopCart(c) //12.Shop cart boyicha default holati time sort DESC
-	// controller.GetAllCategoryShopCars(c) //8.Qaysi category larda qancha mahsulot sotilgan boyicha jadval
+	// controller.GetAllShopCart(c) //12.Shop cart boyicha default holati time sort DESC
+	controller.GetAllCategoryShopCars(c) //8.Qaysi category larda qancha mahsulot sotilgan boyicha jadval
 	// controller.ActiveClient(c)           //9. Qaysi Client eng Active xaridor. Bitta ma'lumot chiqsa yetarli.
 	// controller.Top10SellProducts(c) //5.Top 10 ta sotilayotgan mahsulotlarni royxati.
 	// controller.Down10SellProducts(c) //6.Top 10 ta  eng past sotilayotgan mahsulotlarni royxati.
